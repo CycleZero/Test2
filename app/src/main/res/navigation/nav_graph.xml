@@ -14,6 +14,11 @@
         <action
                 android:id="@+id/action_FirstFragment_to_SecondFragment"
                 app:destination="@id/SecondFragment"/>
+        <action
+            android:id="@+id/action_firstfragment_to_chat1"
+            app:destination="@id/chat1"
+            app:enterAnim="@anim/toleftanim_enter"
+            app:exitAnim="@anim/toleftanim_exit" />
     </fragment>
     <fragment
             android:id="@+id/SecondFragment"
@@ -24,5 +29,17 @@
         <action
                 android:id="@+id/action_SecondFragment_to_FirstFragment"
                 app:destination="@id/FirstFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/chat1"
+        android:name="com.example.test2.chat1"
+        android:label="@string/chat1_label"
+        tools:layout="@layout/fragment_chat1">
+
+        <action
+            android:id="@+id/action_chat1_to_firstfragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/torightanim_enter"
+            app:exitAnim="@anim/torightanim_exit" />
     </fragment>
 </navigation>
