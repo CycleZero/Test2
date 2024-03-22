@@ -1,0 +1,30 @@
+<vector android:height="400dp" android:tint="#66CCFF"
+    android:viewportHeight="40" android:viewportWidth="40"
+    android:width="400dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:name="rotationGroup"
+        android:pivotX="20.0"
+        android:pivotY="20.0"
+        android:rotation="0.0" >
+    <path android:name="up"
+        android:pathData="M20,10 a10,10 0 0,1 10,10"
+        android:strokeColor="#333330" android:strokeWidth="3"
+        android:strokeLineCap="round" android:trimPathStart="0.3"
+        android:trimPathEnd="0.7"/>
+    <path  android:name="right"
+        android:pathData="M30,20 a10,10 0 0,1 -10,10"
+        android:strokeColor="#333330" android:strokeWidth="3"
+        android:strokeLineCap="round" android:trimPathStart="0.3"
+        android:trimPathEnd="0.7"/>
+    <path  android:name="down"
+        android:pathData="M20,30 a10,10 0 0,1 -10,-10"
+        android:strokeColor="#333330" android:strokeWidth="3"
+        android:strokeLineCap="round" android:trimPathStart="0.3"
+        android:trimPathEnd="0.7"/>
+    <path  android:name="left"
+        android:pathData="M10,20 a10,10 0 0,1 10,-10"
+        android:strokeColor="#333330" android:strokeWidth="3"
+        android:strokeLineCap="round" android:trimPathStart="0.3"
+        android:trimPathEnd="0.7"/>
+    </group>
+</vector>

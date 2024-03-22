@@ -18,6 +18,7 @@ class welcome : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         ViewCompat.animate(binding.imageView).apply {
             //缩放，变成1.0倍
             scaleX(1.0f)
