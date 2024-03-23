@@ -4,13 +4,12 @@ import android.graphics.drawable.Animatable2
 import android.graphics.drawable.AnimatedVectorDrawable
 import android.graphics.drawable.Drawable
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.test2.databinding.FragmentChat1Binding
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-
+import com.example.test2.databinding.FragmentChat1Binding
 
 
 /**
@@ -25,6 +24,8 @@ class chat1 : Fragment() {
     public lateinit var t:T
     public lateinit var animator :AnimatedVectorDrawable
     private lateinit var ca:Call
+    private lateinit var ca2:Call2
+    private var isCycleChecked = false
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,22 +45,31 @@ class chat1 : Fragment() {
         }
 
 
-        animator = (binding.imageView2.drawable as AnimatedVectorDrawable)
-        ca= Call(animator)
+     //   animator = (binding.imageView2.drawable as AnimatedVectorDrawable)
+     //   ca= Call(animator)
+      //  ca2=Call2(binding)
+
         binding.button3.setOnClickListener {
-
-              animator.unregisterAnimationCallback(ca)//移除监听的方法
-
+/*
+            isCycleChecked= !isCycleChecked
+            val stateSet = intArrayOf(android.R.attr.state_checked * (if (isCycleChecked) 1 else -1))
+            binding.imageView2.setImageState(stateSet, true)
+*/
+       //     binding.imageView2.setActivated(!binding.imageView2.isActivated());
+            isCycleChecked = !isCycleChecked
+           binding.imageView2.setImageState(intArrayOf(if (isCycleChecked) android.R.attr.state_checked else -android.R.attr.state_checked), true)
+        //    (binding.imageView2.drawable as AnimatedVectorDrawable).start()
         }
 
 
-        animator.registerAnimationCallback(ca)
-        animator.start()
+      //  animator.registerAnimationCallback(ca)
+       // animator.start()
+        /*
         if(!(binding.imageView2.drawable as AnimatedVectorDrawable).isRunning)
         {
             (binding.imageView2.drawable as AnimatedVectorDrawable).start()
         }
-
+*/
 
     }
 
@@ -86,5 +96,11 @@ class Call(var a: AnimatedVectorDrawable) :Animatable2.AnimationCallback(){
     override fun onAnimationEnd(drawable: Drawable?) {
         super.onAnimationEnd(drawable)
         a.start()
+    }
+}
+class Call2(var a: FragmentChat1Binding) :Animatable2.AnimationCallback(){
+    override fun onAnimationEnd(drawable: Drawable?) {
+        super.onAnimationEnd(drawable)
+        a.imageView2.setImageResource(R.drawable.cycleanimbind2)
     }
 }

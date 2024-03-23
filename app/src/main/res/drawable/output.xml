@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="400dp" android:tint="#66CCFF"
+    android:viewportHeight="40" android:viewportWidth="40"
+    android:width="400dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:name="rotationGroup"
+        android:pivotX="20.0"
+        android:pivotY="20.0"
+        android:rotation="0.0" >
+        <path android:name="up"
+            android:pathData="M20,2 l18,0 l0,20 "
+            android:strokeColor="#333330" android:strokeWidth="3"
+            android:strokeLineCap="round" android:strokeLineJoin="round"
+            />
+        <path  android:name="right"
+            android:pathData="M38,20 l0,18 l-20,0"
+            android:strokeColor="#333330" android:strokeWidth="3"
+            android:strokeLineCap="round" android:strokeLineJoin="round"
+            />
+        <path  android:name="down"
+            android:pathData="M20,38 l-18,0 l0,-20"
+            android:strokeColor="#333330" android:strokeWidth="3"
+            android:strokeLineCap="round" android:strokeLineJoin="round"/>
+        <path  android:name="left"
+            android:pathData="M2,20 l0,-18 l20,0"
+            android:strokeColor="#333330" android:strokeWidth="3"
+            android:strokeLineCap="round" android:strokeLineJoin="round"/>
+    </group>
+</vector>
