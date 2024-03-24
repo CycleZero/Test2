@@ -21,7 +21,7 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"/>
     <objectAnimator android:duration="300"
         android:propertyName="strokeWidth"
-        android:valueFrom="3"
+        android:valueFrom="4"
         android:valueTo="1.5"
         android:valueType="floatType"
         android:startOffset="200"

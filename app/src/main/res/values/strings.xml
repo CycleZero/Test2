@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Test2</string>
+    <string name="app_name">Another Me</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -8,6 +8,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="test1">Test1111111</string>
+    <string name="touch_to_start">Touch To Start</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris volutpat, dolor id
@@ -39,9 +40,8 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus vestibulum. Fusce
         dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_welcome">welcome</string>
+    <string name="title_activity_welcome">Another Me</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

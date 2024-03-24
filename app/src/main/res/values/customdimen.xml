@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="customdimen1" tools:ignore="MissingDefaultResource">180dp</dimen>
+</resources>

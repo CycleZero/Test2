@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:drawable="@drawable/cyclet1">
+    android:drawable="@drawable/cyclet1" >
     <target
         android:name="up"
-        android:animation="@animator/cycleanimup" />
+        android:animation="@animator/anim_output_to_cycle" />
+    <target
+        android:name="right"
+        android:animation="@animator/anim_output_to_cycle" />
+    <target
+        android:name="down"
+        android:animation="@animator/anim_output_to_cycle" />
+    <target
+        android:name="left"
+        android:animation="@animator/anim_output_to_cycle" />
+    <target
+        android:animation="@animator/output_to_cycle_scale"
+        android:name="rotationGroup"/>
 
 </animated-vector>

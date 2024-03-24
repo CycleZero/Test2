@@ -33,10 +33,7 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
 
-        }
         binding.button2.setOnClickListener{
             findNavController().navigate(R.id.action_firstfragment_to_chat1)
         }

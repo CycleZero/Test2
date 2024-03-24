@@ -13,12 +13,12 @@
         />
 
     <transition
-        android:drawable="@drawable/cycleanimbind"
+        android:drawable="@drawable/cycleanimbind2"
         android:fromId="@id/cycleon"
         android:toId="@id/cycleoff"/>
 
     <transition
-        android:drawable="@drawable/cycleanimbind2"
+        android:drawable="@drawable/cycleanimbind3"
         android:fromId="@id/cycleoff"
         android:toId="@id/cycleon"/>
 </animated-selector>
